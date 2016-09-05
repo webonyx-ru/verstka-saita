@@ -1,0 +1,7 @@
+.idea
+node_modules
+*.log
+app/bower_components
+app/sass-cache
+dist
+.sass-cache
