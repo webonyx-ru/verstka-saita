@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-regular.woff);
+}
+@font-face {
+  font-family: "Moon";
+  src: url(../fonts/moon.woff);
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5,12 +13,105 @@
   outline: none;
 }
 
+html, body {
+  font-size: 16px;
+  font-family: "Raleway", serif;
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", serif;
+  font-weight: 600;
+}
+
+.-margin-top-10 {
+  margin-top: 10px !important;
+}
+
+.-margin-top-20 {
+  margin-top: 20px !important;
+}
+
+.-margin-top-30 {
+  margin-top: 30px !important;
+}
+
 .-margin-top-40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
+}
+
+.-margin-top-50 {
+  margin-top: 50px !important;
+}
+
+.-margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.-margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.-margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+.-margin-bottom-40 {
+  margin-bottom: 40px !important;
+}
+
+.-margin-bottom-50 {
+  margin-bottom: 50px !important;
 }
 
 .uk-container {
   max-width: 980px;
+}
+
+.uk-form .uk-form-width-large {
+  width: 100%;
+}
+.uk-form textarea {
+  min-height: 150px;
+}
+.uk-form input[type=submit],
+.uk-form button[type=submit] {
+  border-radius: 5px;
+  background-color: #2eb6d1;
+  opacity: 1;
+  padding: 15px 35px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.uk-form input[type=submit]:hover,
+.uk-form button[type=submit]:hover {
+  background: #2897bd;
+}
+.uk-form input[type=submit].not-round,
+.uk-form button[type=submit].not-round {
+  border-radius: 0;
+}
+.uk-form input[type=text],
+.uk-form input[type=password],
+.uk-form input[type=email],
+.uk-form input[type=url],
+.uk-form input[type=search],
+.uk-form input[type=tel],
+.uk-form input[type=number],
+.uk-form input[type=datetime],
+.uk-form input[type=datetime-local],
+.uk-form input[type=date],
+.uk-form input[type=month],
+.uk-form input[type=time],
+.uk-form input[type=week],
+.uk-form input[type=color],
+.uk-form select,
+.uk-form textarea {
+  font-size: 14px;
 }
 
 .circle {
@@ -49,6 +150,15 @@
   background-color: #2eb6d1;
 }
 
+.devider-top-left-light::before {
+  display: block;
+  content: "";
+  width: 10%;
+  height: 2px;
+  margin: 15px 0 20px;
+  background-color: #fff;
+}
+
 .devider-bottom-center::after {
   display: block;
   content: "";
@@ -56,6 +166,88 @@
   height: 2px;
   margin: 15px auto 20px;
   background-color: #2eb6d1;
+}
+
+.form-transparent-full input[type=text],
+.form-transparent-full input[type=password],
+.form-transparent-full input[type=email],
+.form-transparent-full input[type=url],
+.form-transparent-full input[type=search],
+.form-transparent-full input[type=tel],
+.form-transparent-full input[type=number],
+.form-transparent-full input[type=datetime],
+.form-transparent-full input[type=datetime-local],
+.form-transparent-full input[type=date],
+.form-transparent-full input[type=month],
+.form-transparent-full input[type=time],
+.form-transparent-full input[type=week],
+.form-transparent-full input[type=color],
+.form-transparent-full select,
+.form-transparent-full textarea {
+  background: transparent;
+  border: 1px solid #4a4a4a;
+  font-size: 12px;
+}
+.form-transparent-full input[type=text]:focus,
+.form-transparent-full input[type=password]:focus,
+.form-transparent-full input[type=email]:focus,
+.form-transparent-full input[type=url]:focus,
+.form-transparent-full input[type=search]:focus,
+.form-transparent-full input[type=tel]:focus,
+.form-transparent-full input[type=number]:focus,
+.form-transparent-full input[type=datetime]:focus,
+.form-transparent-full input[type=datetime-local]:focus,
+.form-transparent-full input[type=date]:focus,
+.form-transparent-full input[type=month]:focus,
+.form-transparent-full input[type=time]:focus,
+.form-transparent-full input[type=week]:focus,
+.form-transparent-full input[type=color]:focus,
+.form-transparent-full select:focus,
+.form-transparent-full textarea:focus {
+  background: transparent;
+}
+
+.form-transparent {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+}
+.form-transparent input[type=text],
+.form-transparent input[type=password],
+.form-transparent input[type=email],
+.form-transparent input[type=url],
+.form-transparent input[type=search],
+.form-transparent input[type=tel],
+.form-transparent input[type=number],
+.form-transparent input[type=datetime],
+.form-transparent input[type=datetime-local],
+.form-transparent input[type=date],
+.form-transparent input[type=month],
+.form-transparent input[type=time],
+.form-transparent input[type=week],
+.form-transparent input[type=color],
+.form-transparent select,
+.form-transparent textarea {
+  border: 1px solid #f2f2f2;
+  background-color: rgba(246, 246, 246, 0.49);
+  font-size: 14px;
+}
+.form-transparent input[type=text]:focus,
+.form-transparent input[type=password]:focus,
+.form-transparent input[type=email]:focus,
+.form-transparent input[type=url]:focus,
+.form-transparent input[type=search]:focus,
+.form-transparent input[type=tel]:focus,
+.form-transparent input[type=number]:focus,
+.form-transparent input[type=datetime]:focus,
+.form-transparent input[type=datetime-local]:focus,
+.form-transparent input[type=date]:focus,
+.form-transparent input[type=month]:focus,
+.form-transparent input[type=time]:focus,
+.form-transparent input[type=week]:focus,
+.form-transparent input[type=color]:focus,
+.form-transparent select:focus,
+.form-transparent textarea:focus {
+  background: rgba(246, 246, 246, 0.59);
 }
 
 .section {
@@ -96,6 +288,12 @@
   text-transform: uppercase;
   display: block;
 }
+.section .section-small-light {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+}
 .section .section-title {
   margin: 0;
   color: #4a4a4a;
@@ -119,6 +317,11 @@
   font-size: 19px;
   font-weight: 400;
 }
+.section .section-title-small-light {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+}
 .section .section-text {
   color: #4a4a4a;
   line-height: 21px;
@@ -127,8 +330,15 @@
   letter-spacing: 0;
   text-indent: 0;
 }
+.section .section-text-light {
+  color: #fff;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-indent: 0;
+}
 .section .section-small-info {
-  width: 60%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
@@ -143,9 +353,13 @@
   border-width: 1px 1px 1px 3px;
   border-color: #dedede #dedede #dedede #2eb6d1;
 }
-.section.section.section-info-block-dark {
+.section.section-info-block-dark {
   background-color: #292828;
   padding: 35px 0;
+}
+
+.section-small {
+  padding: 30px 0;
 }
 
 .header {
@@ -178,6 +392,12 @@
 .header .uk-navbar li a:hover {
   color: #2897bd;
 }
+.header .uk-navbar li a > i {
+  float: right;
+  font-size: 18px;
+  margin: -2px 0 0 5px;
+  color: #4a4a4a;
+}
 .header .uk-navbar li.uk-active a {
   color: #2897bd;
 }
@@ -185,7 +405,11 @@
   margin: 0;
 }
 .header .uk-dropdown {
-  top: 45px !important;
+  top: 42px !important;
+  background: #fff;
+}
+.header .uk-dropdown ul li {
+  padding: 10px 15px;
 }
 .header .uk-navbar-toggle {
   height: auto;
@@ -233,6 +457,60 @@
   background: #fff;
 }
 
+.footer .footer-top {
+  background-color: #292828;
+  color: #828282;
+}
+.footer .footer-info-title {
+  color: #b3b4b5;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.footer .unstyled-link {
+  color: #828282;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer .unstyled-link:hover {
+  color: #2897bd;
+}
+.footer .footer-info {
+  color: #828282;
+  font-size: 16px;
+}
+.footer .footer-info > a {
+  margin-left: 10px;
+}
+.footer .footer-bottom {
+  background-color: #212121;
+}
+.footer .footer-bottom .uk-navnar ul li a {
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  color: #828282;
+  background: transparent;
+  font-size: 10px;
+  border-right: 1px solid rgba(173, 175, 179, 0.09);
+}
+.footer .footer-bottom .uk-navnar ul li:last-child a {
+  border-right: none;
+}
+.footer .footer-bottom .uk-navnar ul li:hover a {
+  background: transparent;
+  color: #339ce1;
+}
+.footer .footer-bottom .uk-navnar ul li.uk-active a {
+  background: transparent;
+  color: #339ce1;
+}
+.footer .footer-bottom .copyright {
+  font-size: 13px;
+  line-height: 20px;
+  color: #828282;
+}
+
 .our-services {
   background: url("../images/services-bg.png");
 }
@@ -240,8 +518,19 @@
   width: 70%;
   display: inline-block;
 }
+.our-services .article p {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
 @media only screen and (max-width: 768px) {
   .our-services .article {
     width: 100%;
   }
+}
+
+.callback-section {
+  background-image: url("../images/callback-bg.jpg");
+  background-size: cover;
+  background-position: top center;
 }
