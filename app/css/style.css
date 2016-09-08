@@ -24,6 +24,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+a {
+  color: #2897bd;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+.-boxed {
+  padding: 0 30px;
+}
+
+.-boxed-small-dark {
+  background: #000;
+  padding: 15px 10px;
+}
+
 .-text-upper {
   text-transform: uppercase;
 }
@@ -76,12 +97,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 50px;
 }
 
+.-text-medium {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+
 .-color-medium {
   color: #828282;
 }
 
 .uk-container {
   max-width: 980px;
+}
+
+.uk-button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 .uk-button-primary {
@@ -121,6 +156,19 @@ h1, h2, h3, h4, h5, h6 {
 .uk-form button[type=submit].not-round {
   border-radius: 0;
 }
+.uk-form input[type=submit].small-submit,
+.uk-form button[type=submit].small-submit {
+  padding: 5px 10px;
+}
+.uk-form input[type=submit].submit-dark,
+.uk-form button[type=submit].submit-dark {
+  background-color: #4a4a4a;
+}
+.uk-form input[type=submit].submit-dark:hover,
+.uk-form button[type=submit].submit-dark:hover {
+  background: #fff;
+  color: #000;
+}
 .uk-form input[type=text],
 .uk-form input[type=password],
 .uk-form input[type=email],
@@ -138,6 +186,39 @@ h1, h2, h3, h4, h5, h6 {
 .uk-form select,
 .uk-form textarea {
   font-size: 14px;
+}
+
+.uk-article {
+  border-bottom: 1px solid rgba(173, 175, 179, 0.2);
+  padding-bottom: 30px;
+}
+.uk-article .uk-article-title {
+  color: #4a4a4a;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.uk-article .uk-article-title a {
+  transition: all 0.3s ease;
+}
+.uk-article .uk-article-title a:hover {
+  color: #2897bd;
+}
+.uk-article .uk-article-lead {
+  color: #4a4a4a;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-indent: 0px;
+}
+.uk-article .uk-article-meta .uk-button {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.uk-article:last-child {
+  border-bottom: 0;
 }
 
 .unstyled-link {
@@ -292,14 +373,15 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 3;
 }
-.section.section-info-block-light {
+
+.section-info-block-light {
   padding: 35px 0;
   background-color: #f2f2f2;
-  border-style: solid solid solid none;
-  border-width: 1px 1px 1px 3px;
-  border-color: #dedede #dedede #dedede #2eb6d1;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
 }
-.section.section-info-block-dark {
+
+.section-info-block-dark {
   background-color: #292828;
   padding: 35px 0;
 }
