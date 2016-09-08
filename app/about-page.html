@@ -10,186 +10,188 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Header-->
-    <header class="header" data-uk-sticky>
-      <div class="uk-container uk-container-center">
-        <div class="uk-grid">
-          <div class="header-mobile-info uk-width-small-1-1 uk-width-medium-2-3 uk-hidden-large">
-            <nav class="uk-navbar-nav"><a class="uk-navbar-toggle" href="#mobile-nav" data-uk-offcanvas></a></nav>
-          </div>
-          <div class="header-left uk-width-small-1-1 uk-width-medium-1-3 uk-hidden-small"><a href="index.html"><img class="logo" src="images/pm-logo.svg"></a></div>
-          <div class="header-right uk-width-small-1-1 uk-width-medium-2-3 uk-clearfix">
-            <nav class="uk-navbar uk-visible-large uk-float-right">
-              <ul class="uk-navbar-nav"><a class="uk-navbar-toggle uk-hidden-large" href="#mobile-nav" data-uk-offcanvas></a>
-                <li class="uk-active"><a href="work-page.html">Работы</a></li>
-                <li data-uk-dropdown="{mode:'click', pos:'bottom-center'}"><a href="#">УСЛУГИ<i class="uk-icon-angle-down"></i></a>
-                  <div class="uk-dropdown uk-dropdown-small">
-                    <ul class="uk-nav uk-nav-dropdown">
-                      <li><a href="#">Мобильные сайты</a></li>
-                      <li><a href="#">HTML-вёрстка</a></li>
-                      <li><a href="#">Адаптация сайта</a></li>
-                      <li><a href="#">Программирование</a></li>
-                      <li><a href="#">Стоимость вёрстки сайта</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="about-page.html">О НАС</a></li>
-                <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
-                <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="uk-offcanvas" id="mobile-nav">
-      <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
-          <li class="uk-active"><a href="work-page.html">Работы</a></li>
-          <li class="uk-parent"><a href="#">УСЛУГИ</a>
-            <ul class="uk-nav-sub">
-              <li><a href="#">Мобильные сайты</a></li>
-              <li><a href="#">HTML-вёрстка</a></li>
-              <li><a href="#">Адаптация сайта</a></li>
-              <li><a href="#">Программирование</a></li>
-              <li><a href="#">Стоимость вёрстки сайта</a></li>
-            </ul>
-          </li>
-          <li><a href="about-page.html">О НАС</a></li>
-          <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
-          <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- Header end-->
-    <!-- Content-->
-    <section class="header-info section-cover" style="background-image: url('images/about-page-bg.jpg')">
-      <div class="section-overlay">
+    <div class="site-container">
+      <!-- Header-->
+      <header class="header" data-uk-sticky>
         <div class="uk-container uk-container-center">
-          <h1 class="header-info-title uk-text-center">О НАС</h1>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="uk-container uk-container-center">
-        <h3 class="section-title uk-text-center">ЗНАКОМЬТЕСЬ</h3>
-        <p class="devider-top-center uk-text-center">«ВерсткаСайта.ру» в текущем виде выросли из агенства по front-end разработке. Основные наши клиенты были сторонние агенства и мы выполняли работу для них.</p>
-        <p class="uk-text-center">Стремительно набрали солидную клиентскую базу, реализовали качественные кейсы и взяли новое направление — мобильная разработка. Мы нацелены на прозрачное и долгосрочное сотрудничество с клиентами, основанное на доверии и взаимопонимании, а также мы ставим увеличение показателей бизнеса наших клиентов в приоритетные задачи своей работы.</p>
-      </div>
-    </section>
-    <section class="section-cover-fixed" style="background-image: url('images/about-section-bg.jpg')">
-      <div class="section-overlay">
-        <div class="uk-container uk-container-center">
-          <ul class="uk-grid uk-grid-large uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
-            <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-user.svg" alt="">
-              <p class="-text-light -text-large">6</p>
-              <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
-              <p class="-text-light">ЧЕЛОВЕК В ШТАТЕ</p>
-            </li>
-            <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-flag.svg" alt="">
-              <p class="-text-light -text-large">58</p>
-              <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
-              <p class="-text-light">ЛЕТ — СУММАРНЫЙ ОПЫТ РАБОТЫ</p>
-            </li>
-            <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-heart.svg" alt="">
-              <p class="-text-light -text-large">67</p>
-              <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
-              <p class="-text-light">УСПЕШНО РЕАЛИЗОВАННЫХ ПРОЕКТА</p>
-            </li>
-            <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-portfolio.svg" alt="">
-              <p class="-text-light -text-large">2013</p>
-              <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
-              <p class="-text-light">ГОД ОСНОВАНИЯ</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="uk-container uk-container-center">
-        <h3 class="section-title uk-text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h3>
-        <p class="devider-top-center"></p>
-        <div data-uk-slideset="{default: 1, animation: 'scale'}">
-          <ul class="uk-grid uk-slideset">
-            <li class="uk-text-center"><img src="images/heart.svg" alt="">
-              <p>С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!</p>
-              <p class="title-text">АНАСТАСИЯ ЛЕБЕДЕВА</p><small>Arealidea</small>
-            </li>
-            <li class="uk-text-center"><img src="images/heart.svg" alt="">
-              <p>С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!</p>
-              <p class="title-text">АНАСТАСИЯ ЛЕБЕДЕВА</p><small>Arealidea</small>
-            </li>
-          </ul>
-          <div class="uk-text-center -margin-top-20"><a class="uk-button uk-button-primary uk-button-large -text-upper" href="" data-uk-slideset-item="next">Следующий отзыв</a></div>
-        </div>
-      </div>
-    </section>
-    <!-- Content end-->
-    <!-- Footer-->
-    <footer class="footer">
-      <div class="footer-top section">
-        <div class="uk-container uk-container-center">
-          <div class="uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
-            <div>
-              <h5 class="footer-info-title">МЫ В СОЦ.СЕТЯХ</h5>
+          <div class="uk-grid">
+            <div class="header-mobile-info uk-width-small-1-1 uk-width-medium-2-3 uk-hidden-large">
+              <nav class="uk-navbar-nav"><a class="uk-navbar-toggle" href="#mobile-nav" data-uk-offcanvas></a></nav>
             </div>
-            <div>
-              <h5 class="footer-info-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h5>
-              <p>Москва, Варшавское шоссе, 28А</p>
-              <p class="footer-info">Телефон:<a class="unstyled-link" href="tel:+7 916 0063233">+7 916 0063233</a></p>
-              <p class="footer-info">Email:<a class="unstyled-link" href="mailto:1@verstka-saita.ru">1@verstka-saita.ru</a></p>
-            </div>
-            <div>
-              <h5 class="footer-info-title">ПОЛЕЗНЫЕ ССЫЛКИ</h5>
-              <p><a class="unstyled-link" href="#">PageSpeed Insights</a></p>
-              <p><a class="unstyled-link" href="#">Mobile-Friendly Test</a></p>
-            </div>
-            <div>
-              <h5 class="footer-info-title">ПЕРЕЗВОНИМ В ТЕЧЕНИЕ СУТОК</h5>
-              <form class="uk-form form-transparent-full">
-                <div class="uk-form-row">
-                  <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваше имя" requried>
-                </div>
-                <div class="uk-form-row">
-                  <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваш номер телефона" requried>
-                </div>
-                <div class="uk-form-row">
-                  <input class="not-round uk-form-width-large" type="submit" value="Отправить">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom section section-small">
-        <div class="uk-container uk-container-center">
-          <div class="uk-grid uk-grid-large" data-uk-grid-margin data-uk-grid-match>
-            <div class="uk-width-small-1-1 uk-width-medium-1-3">
-              <p class="copyright">&copy; 2013-2016 ВерсткаСайта</p>
-            </div>
-            <div class="uk-width-small-1-1 uk-width-medium-2-3">
-              <nav class="uk-navnar">
-                <ul class="uk-navbar-nav uk-float-right uk-hidden-small">
-                  <li class="uk-active"><a href="#">ГЛАВНАЯ</a></li>
-                  <li><a href="#">РАБОТЫ</a></li>
-                  <li><a href="#">УСЛУГИ</a></li>
-                  <li><a href="#">О НАС</a></li>
-                  <li><a href="#">ПОЛЕЗНОЕ</a></li>
-                  <li><a href="#">КОНТАКТЫ</a></li>
+            <div class="header-left uk-width-small-1-1 uk-width-medium-1-3 uk-hidden-small"><a href="index.html"><img class="logo" src="images/pm-logo.svg"></a></div>
+            <div class="header-right uk-width-small-1-1 uk-width-medium-2-3 uk-clearfix">
+              <nav class="uk-navbar uk-visible-large uk-float-right">
+                <ul class="uk-navbar-nav"><a class="uk-navbar-toggle uk-hidden-large" href="#mobile-nav" data-uk-offcanvas></a>
+                  <li class="uk-active"><a href="work-page.html">Работы</a></li>
+                  <li data-uk-dropdown="{mode:'click', pos:'bottom-center'}"><a href="#">УСЛУГИ<i class="uk-icon-angle-down"></i></a>
+                    <div class="uk-dropdown uk-dropdown-small">
+                      <ul class="uk-nav uk-nav-dropdown">
+                        <li><a href="#">Мобильные сайты</a></li>
+                        <li><a href="#">HTML-вёрстка</a></li>
+                        <li><a href="#">Адаптация сайта</a></li>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="pricelist-page.html">Стоимость вёрстки сайта</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="about-page.html">О НАС</a></li>
+                  <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
+                  <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
                 </ul>
               </nav>
             </div>
           </div>
         </div>
+      </header>
+      <div class="uk-offcanvas" id="mobile-nav">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-active"><a href="work-page.html">Работы</a></li>
+            <li class="uk-parent"><a href="#">УСЛУГИ</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Мобильные сайты</a></li>
+                <li><a href="#">HTML-вёрстка</a></li>
+                <li><a href="#">Адаптация сайта</a></li>
+                <li><a href="#">Программирование</a></li>
+                <li><a href="pricelist-page.html">Стоимость вёрстки сайта</a></li>
+              </ul>
+            </li>
+            <li><a href="about-page.html">О НАС</a></li>
+            <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
+            <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
       </div>
-    </footer>
-    <!-- Footer end-->
-    <!-- Scripts-->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/uikit/js/uikit.min.js"></script>
-    <script src="bower_components/uikit/js/components/grid.min.js"></script>
-    <script src="bower_components/uikit/js/components/sticky.min.js"></script>
-    <script src="bower_components/uikit/js/components/slideset.min.js"></script>
-    <script src="js/app.js"></script>
+      <!-- Header end-->
+      <!-- Content-->
+      <section class="header-info section-cover" style="background-image: url('images/about-page-bg.jpg')">
+        <div class="section-overlay">
+          <div class="uk-container uk-container-center">
+            <h1 class="header-info-title uk-text-center">О НАС</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <h3 class="section-title uk-text-center">ЗНАКОМЬТЕСЬ</h3>
+          <p class="devider-top-center uk-text-center">«ВерсткаСайта.ру» в текущем виде выросли из агенства по front-end разработке. Основные наши клиенты были сторонние агенства и мы выполняли работу для них.</p>
+          <p class="uk-text-center">Стремительно набрали солидную клиентскую базу, реализовали качественные кейсы и взяли новое направление — мобильная разработка. Мы нацелены на прозрачное и долгосрочное сотрудничество с клиентами, основанное на доверии и взаимопонимании, а также мы ставим увеличение показателей бизнеса наших клиентов в приоритетные задачи своей работы.</p>
+        </div>
+      </section>
+      <section class="section-cover-fixed" style="background-image: url('images/about-section-bg.jpg')">
+        <div class="section-overlay">
+          <div class="uk-container uk-container-center">
+            <ul class="uk-grid uk-grid-large uk-grid-width-small-1-2 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
+              <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-user.svg" alt="">
+                <p class="-text-light -text-large">6</p>
+                <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
+                <p class="-text-light">ЧЕЛОВЕК В ШТАТЕ</p>
+              </li>
+              <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-flag.svg" alt="">
+                <p class="-text-light -text-large">58</p>
+                <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
+                <p class="-text-light">ЛЕТ — СУММАРНЫЙ ОПЫТ РАБОТЫ</p>
+              </li>
+              <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-heart.svg" alt="">
+                <p class="-text-light -text-large">67</p>
+                <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
+                <p class="-text-light">УСПЕШНО РЕАЛИЗОВАННЫХ ПРОЕКТА</p>
+              </li>
+              <li class="uk-text-center"><img class="-margin-bottom-20" src="images/icon-portfolio.svg" alt="">
+                <p class="-text-light -text-large">2013</p>
+                <div class="devider-top-center -margin-bottom-30 -margin-top-30"></div>
+                <p class="-text-light">ГОД ОСНОВАНИЯ</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <h3 class="section-title uk-text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h3>
+          <p class="devider-top-center"></p>
+          <div data-uk-slideset="{default: 1, animation: 'scale'}">
+            <ul class="uk-grid uk-slideset">
+              <li class="uk-text-center"><img src="images/heart.svg" alt="">
+                <p>С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!</p>
+                <p class="title-text">АНАСТАСИЯ ЛЕБЕДЕВА</p><small>Arealidea</small>
+              </li>
+              <li class="uk-text-center"><img src="images/heart.svg" alt="">
+                <p>С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!</p>
+                <p class="title-text">АНАСТАСИЯ ЛЕБЕДЕВА</p><small>Arealidea</small>
+              </li>
+            </ul>
+            <div class="uk-text-center -margin-top-20"><a class="uk-button uk-button-primary uk-button-large -text-upper" href="" data-uk-slideset-item="next">Следующий отзыв</a></div>
+          </div>
+        </div>
+      </section>
+      <!-- Content end-->
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="footer-top section">
+          <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
+              <div>
+                <h5 class="footer-info-title">МЫ В СОЦ.СЕТЯХ</h5>
+              </div>
+              <div>
+                <h5 class="footer-info-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h5>
+                <p>Москва, Варшавское шоссе, 28А</p>
+                <p class="footer-info">Телефон:<a class="unstyled-link" href="tel:+7 916 0063233">+7 916 0063233</a></p>
+                <p class="footer-info">Email:<a class="unstyled-link" href="mailto:1@verstka-saita.ru">1@verstka-saita.ru</a></p>
+              </div>
+              <div>
+                <h5 class="footer-info-title">ПОЛЕЗНЫЕ ССЫЛКИ</h5>
+                <p><a class="unstyled-link" href="#">PageSpeed Insights</a></p>
+                <p><a class="unstyled-link" href="#">Mobile-Friendly Test</a></p>
+              </div>
+              <div>
+                <h5 class="footer-info-title">ПЕРЕЗВОНИМ В ТЕЧЕНИЕ СУТОК</h5>
+                <form class="uk-form form-transparent-full">
+                  <div class="uk-form-row">
+                    <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваше имя" requried>
+                  </div>
+                  <div class="uk-form-row">
+                    <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваш номер телефона" requried>
+                  </div>
+                  <div class="uk-form-row">
+                    <input class="not-round uk-form-width-large" type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom section section-small">
+          <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-large" data-uk-grid-margin data-uk-grid-match>
+              <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <p class="copyright">&copy; 2013-2016 ВерсткаСайта</p>
+              </div>
+              <div class="uk-width-small-1-1 uk-width-medium-2-3">
+                <nav class="uk-navnar">
+                  <ul class="uk-navbar-nav uk-float-right uk-hidden-small">
+                    <li class="uk-active"><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">РАБОТЫ</a></li>
+                    <li><a href="#">УСЛУГИ</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">ПОЛЕЗНОЕ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end-->
+      <!-- Scripts-->
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/uikit/js/uikit.min.js"></script>
+      <script src="bower_components/uikit/js/components/grid.min.js"></script>
+      <script src="bower_components/uikit/js/components/sticky.min.js"></script>
+      <script src="bower_components/uikit/js/components/slideset.min.js"></script>
+      <script src="js/app.js"></script>
+    </div>
   </body>
 </html>

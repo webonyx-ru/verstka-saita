@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title goes here...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets-->
+    <link href="bower_components/uikit/css/uikit.min.css" rel="stylesheet">
+    <link href="bower_components/uikit/css/components/sticky.min.css" rel="stylesheet">
+    <link href="bower_components/uikit/css/components/slider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-container">
+      <!-- Header-->
+      <header class="header" data-uk-sticky>
+        <div class="uk-container uk-container-center">
+          <div class="uk-grid">
+            <div class="header-mobile-info uk-width-small-1-1 uk-width-medium-2-3 uk-hidden-large">
+              <nav class="uk-navbar-nav"><a class="uk-navbar-toggle" href="#mobile-nav" data-uk-offcanvas></a></nav>
+            </div>
+            <div class="header-left uk-width-small-1-1 uk-width-medium-1-3 uk-hidden-small"><a href="index.html"><img class="logo" src="images/pm-logo.svg"></a></div>
+            <div class="header-right uk-width-small-1-1 uk-width-medium-2-3 uk-clearfix">
+              <nav class="uk-navbar uk-visible-large uk-float-right">
+                <ul class="uk-navbar-nav"><a class="uk-navbar-toggle uk-hidden-large" href="#mobile-nav" data-uk-offcanvas></a>
+                  <li class="uk-active"><a href="work-page.html">Работы</a></li>
+                  <li data-uk-dropdown="{mode:'click', pos:'bottom-center'}"><a href="#">УСЛУГИ<i class="uk-icon-angle-down"></i></a>
+                    <div class="uk-dropdown uk-dropdown-small">
+                      <ul class="uk-nav uk-nav-dropdown">
+                        <li><a href="#">Мобильные сайты</a></li>
+                        <li><a href="#">HTML-вёрстка</a></li>
+                        <li><a href="#">Адаптация сайта</a></li>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="pricelist-page.html">Стоимость вёрстки сайта</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="about-page.html">О НАС</a></li>
+                  <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
+                  <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="uk-offcanvas" id="mobile-nav">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+            <li class="uk-active"><a href="work-page.html">Работы</a></li>
+            <li class="uk-parent"><a href="#">УСЛУГИ</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Мобильные сайты</a></li>
+                <li><a href="#">HTML-вёрстка</a></li>
+                <li><a href="#">Адаптация сайта</a></li>
+                <li><a href="#">Программирование</a></li>
+                <li><a href="pricelist-page.html">Стоимость вёрстки сайта</a></li>
+              </ul>
+            </li>
+            <li><a href="about-page.html">О НАС</a></li>
+            <li><a href="usefull-page.html">ПОЛЕЗНОЕ</a></li>
+            <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Header end-->
+      <!-- Content-->
+      <section class="header-info section-cover" style="background-image: url('images/pricelist-page-bg.jpg')">
+        <div class="section-overlay">
+          <div class="uk-container uk-container-center">
+            <h1 class="header-info-title uk-text-center">СТОИМОСТЬ ВЁРСТКИ СТРАНИЦ САЙТА</h1>
+            <p class="header-info-text devider-top-center uk-text-center">Расчет стоимости верстки интернет-сайта зависит от суммарного объема работ и ряда специфических параметров. Оценивая проект, мы исходим из стоимости нормо-часа (одного часа работы). Таким образом, стоимость верстки будет прямо пропорциональна количеству часов, потраченных на работу.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-devided">
+        <div class="uk-container uk-container-center">
+          <div class="uk-text-center"><small class="section-small-text">НАШИ ЦЕНЫ НЕ ПРИВЯЗАНЫ К КУРСАМ ВАЛЮТ!</small>
+            <h3 class="section-title">ЦЕНА ОДНОГО НОРМО-ЧАСА – 800 РУБЛЕЙ.</h3>
+            <p class="section-text devider-top-center"></p>Здесь стоит отметить следующее: сегодняшние требования к верстке значительно выросли, возникает множество нестандартных задач. Верстка сайтов зачастую выходит за границы типового написания HTML-кода и предполагает проведение объемной работы по фронтенд-разработке. Тем не менее, мы берем в работу все проекты, независимо от уровня сложности и известности бренда.
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="uk-text-center"><small class="section-small-text">ЦЕНА HTML ВЕРСТКИ САЙТА:</small>
+            <h3 class="section-title">ЧТО НА НЕЕ ВЛИЯЕТ?</h3>
+            <p class="section-text devider-top-center"></p>
+            <div class="-margin-top-50">
+              <p class="page-title">ЧИСЛО СТРАНИЦ, СЛОЖНОСТЬ ДИЗАЙНА, НАЛИЧИЕ АНИМАЦИОННЫХ И ДРУГИХ ЭФФЕКТОВ</p>
+              <p class="uk-text-left">Время работы над различными макетами дизайна может сильно отличаться. В частности, верстка простой текстовой страницы отнимет заметно меньше времени, чем верстка большой страницы с анимационными эффектами и сложным дизайном. В отдельных случаях, когда макет выполнялся далеким от интернет-среды специалистом, дополнительное время будет потрачено на адаптацию элементов дизайна под веб-стандарты.</p>
+            </div>
+            <div class="-margin-top-50">
+              <p class="page-title">ШАБЛОННОСТЬ ВЕБ-СТРАНИЦ</p>
+              <p class="uk-text-left">Верстка шаблонных страниц, выполненных с использованием повторяющихся элементов, потребует намного меньше усилий и времени. Если сравнивать с веб-сайтом, где каждая страница обладает собственным сложным дизайном. В последнем случае стоимость верстки даже внутренних страниц будет сопоставима с оценкой верстки главной страницы сайта.</p>
+            </div>
+            <div class="-margin-top-50">
+              <p class="page-title">КАЧЕСТВО МАКЕТОВ ДИЗАЙНА</p>
+              <p class="uk-text-left">Если заказчик передает нам дизайнерские исходники в плохом состоянии, то может потребоваться дополнительное время на разбор этих материалов. Поэтому желательно предоставлять качественные макеты, удовлетворяющие стандартным требованиям.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-info-block-dark">
+        <div class="uk-container uk-container-center">
+          <div class="uk-text-center"><a class="uk-button uk-button-large button-dark -text-upper -text-letter-large" href="#">Адаптация сайта под мобильные устройства</a></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="-margin-bottom-50">
+            <p class="page-title">ПИКСЕЛЬ-ПЁРФЕКТ</p>
+            <p class="uk-text-left">Данный метод предполагает верстку по принципу «1 в 1» к макету. Столь ювелирная работа потребует дополнительного времени. При этом нужно учитывать, что при таком способе верстки вид страниц веб-сайта в разных браузерах и устройствах может отличаться. Чтобы убрать данные отличия, также понадобится время.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">СТАТИЧНАЯ И АДАПТИВНАЯ ВЕРСТКА</p>
+            <p class="uk-text-left">Стоимость адаптивной верстки заметно выше, поскольку она предполагает больший объем работ. Страницы сайта будут верстаться, условно говоря, под три вида экранов: ПК, планшет, мобильный.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">УРОВЕНЬ ТЕСТИРОВАНИЯ (БАЗОВЫЙ, ПОЛНЫЙ)</p>
+            <p class="uk-text-left">При простой верстке тестирования базового уровня нередко оказывается достаточно. При этом тестировщик проверяет верстку только на основных устройствах. При работе с серьезными и сложными проектами проводится детальное (полное) тестирование на многочисленных устройствах. Это очень кропотливая деятельность, которая заметно увеличивает число рабочих часов верстальщика и тестировщика.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-info-block-light">
+        <div class="uk-container uk-container-center">
+          <div class="section-small-info uk-text-center">
+            <div class="uk-text-center"><a class="uk-button uk-button-primary uk-button-large -text-upper -text-letter-large" href="#">Заказать вёрстку веб-сайта</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="-margin-bottom-50">
+            <p class="page-title">СПЕЦИФИЧЕСКИЕ ЗАПРОСЫ</p>
+            <p class="uk-text-left">В нашу компанию входят высококлассные специалисты с большим практическим опытом. Тем не менее, в процессе работы у клиентов могут возникнуть не совсем стандартные запросы и технические требования. В качестве примера можно привести верстку с применением специальных фреймворков. Соответственно, такая работа также займет несколько больше времени, чем обычно, и будет стоить дороже.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">СОВМЕСТНАЯ РАБОТА СО СПЕЦИАЛИСТАМИ ЗАКАЗЧИКА</p>
+            <p class="uk-text-left">Мы допускаем работу в связке со специалистами клиента, но здесь нужно определенное время на «притирку»: ваши технологии, ваша организация рабочего процесса и прочее. Следовательно, стоимость работы в таком режиме будет немного выше.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">УРОВЕНЬ СРОЧНОСТИ</p>
+            <p class="uk-text-left">При работе на наших условиях в плане сроков мы используем стандартную стоимость нормо-часа. Если заказчику требуется срочная верстка и нашим специалистам придется работать во внеурочное время, стоимость часа работы будет выше.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-info-block-dark">
+        <div class="uk-container uk-container-center">
+          <div class="uk-text-center"><a class="uk-button uk-button-large button-dark -text-upper -text-letter-large" href="#">Разработка мобильной версии сайта</a></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="-margin-bottom-50">
+            <p class="page-title">ВЁРСТКА ПОД ДИСПЛЕИ RETINA</p>
+            <p class="uk-text-left">В настоящее время наблюдается распространение мониторов, обладающих повышенной плотностью пикселей на дюйм. Для корректной работы сайта на таких экранах требуется доработка графики. Мы можем это сделать сами или можем объяснить вашему дизайнеру суть процесса. Это тоже займет определенное время.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">ДОПОЛНИТЕЛЬНЫЕ ТРЕБОВАНИЯ К ОТОБРАЖЕНИЮ В БРАУЗЕРАХ</p>
+            <p class="uk-text-left">Как правило, мы выполняем верстку под все современные браузеры. Однако у клиентов иногда встречаются специальные требования. Например, сверстать страницы под Internet Explorer 7-8. Для этого верстальщику потребуется выделить дополнительное время.</p>
+          </div>
+          <div class="-margin-bottom-50">
+            <p class="page-title">ДОРАБОТКА ВЕРСТКИ ВСЛЕДСТВИЕ НЕУДАЧНОЙ ИНТЕГРАЦИИ СПЕЦИАЛИСТАМИ ЗАКАЗЧИКА</p>
+            <p class="uk-text-left">Иногда специалисты клиента, работая с нашей версткой, ее немножко «ломают». Результатом может стать некорректное отображение рабочего сайта. В этом нет ничего необычного или страшного: просто потребуется дополнительная доработка верстки на «живом» проекте. Во избежание таких ситуаций лучше привлекать для интеграции нашей верстки наших специалистов.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-info-block-light">
+        <div class="uk-container uk-container-center">
+          <div class="section-small-info uk-text-center">
+            <div class="uk-text-center -text-upper">НА СВЯЗИ С 09.00 ДО 21.00 ЕЖЕДНЕВНО!</div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-small-1-1 uk-width-medium-2-3 uk-large-2-3">
+              <h3 class="section-title">СКОЛЬКО СТОИТ ВЕРСТКА САЙТА?</h3>
+              <p class="section-text devider-top-left"></p>Чтобы вам было проще сориентироваться, мы укажем стоимость верстки с базовым тестированием и удобными для нас сроками. Без интеграции с CMS и без особых технических требований.
+              <h3>НАШИ РАСЦЕНКИ:</h3>
+              <ul>
+                <li>адаптивный лендинг – от 10 000 рублей (1 стр.)</li>
+                <li>интернет-магазин (10-15 стр.) – от 30 000 рублей</li>
+                <li>крупный интернет-сервис или корпоративный сайт (20-40 стр.) – от 60 000 рублей</li>
+              </ul>
+            </div>
+            <div class="uk-text-center uk-width-small-1-1 uk-width-medium-1-3 uk-large-1-3"><img class="section-img-large" src="images/desktop-2.jpg"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-info-block-dark">
+        <div class="uk-container uk-container-center">
+          <div class="uk-text-center">
+            <div class="uk-text-center -text-upper -text-light">ВЫ ПОЛУЧАЕТЕ 100% РАБОТАЮЩУЮ ВЁРСТКУ.</div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="uk-container uk-container-center">
+          <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-text-center uk-width-small-1-1 uk-width-medium-1-3 uk-large-1-3"><img class="section-img-large" src="images/mobile-4.jpg"></div>
+            <div class="uk-width-small-1-1 uk-width-medium-2-3 uk-large-2-3">
+              <h3 class="section-title">НАШИ ПРЕИМУЩЕСТВА</h3>
+              <p class="section-text devider-top-left"></p>
+              <ul>
+                <li>профессиональный подход, предполагающий максимальные результаты и выгоды для клиентов;</li>
+                <li>только верстка высокого качества, обеспечивающая корректную работу страниц на любых устройствах;</li>
+                <li>комфортные для клиента варианты сотрудничества, постоянное поддержание связи;</li>
+                <li>ответственность и строгое соблюдение сроков;</li>
+                <li>отсутствие предоплаты для постоянных заказчиков.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback-section section section-light-font">
+        <div class="uk-container uk-container-center">
+          <div class="uk-grid uk-grid-margin uk-grid-width-small-1-1 uk-grid-width-medium-1-2" data-uk-grid-margin>
+            <div>
+              <form class="uk-form form-transparent">
+                <div class="uk-form-row">
+                  <input class="uk-form-large uk-form-width-large" type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="uk-form-row">
+                  <input class="uk-form-large uk-form-width-large" type="email" placeholder="Ваш E-mail" required>
+                </div>
+                <div class="uk-form-row">
+                  <input class="uk-form-large uk-form-width-large" type="text" placeholder="Ваш телефон" required>
+                </div>
+                <div class="uk-form-row">
+                  <textarea class="uk-form-large uk-form-width-large" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="uk-form-row">
+                  <input class="uk-form-large" type="submit" value="Отправить">
+                </div>
+              </form>
+            </div>
+            <div><small class="section-small-text-light">УБЕДИЛИ? ТОГДА ЗА РАБОТУ!</small>
+              <p class="section-text-light">Мы готовы приступить к верстке макета сайта, верстке страниц и интерфейса.</p>
+              <h3 class="section-title-light">ОТПРАВЬТЕ ЗАЯВКУ</h3>
+              <p class="section-text-light">на html-вёрсткуи получите SEO-оптимизацию кода бесплатно!</p>
+              <p class="section-text-light devider-top-left-light">До конца акции осталось:</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Content end-->
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="footer-top section">
+          <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-large uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-4" data-uk-grid-margin data-uk-grid-match>
+              <div>
+                <h5 class="footer-info-title">МЫ В СОЦ.СЕТЯХ</h5>
+              </div>
+              <div>
+                <h5 class="footer-info-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h5>
+                <p>Москва, Варшавское шоссе, 28А</p>
+                <p class="footer-info">Телефон:<a class="unstyled-link" href="tel:+7 916 0063233">+7 916 0063233</a></p>
+                <p class="footer-info">Email:<a class="unstyled-link" href="mailto:1@verstka-saita.ru">1@verstka-saita.ru</a></p>
+              </div>
+              <div>
+                <h5 class="footer-info-title">ПОЛЕЗНЫЕ ССЫЛКИ</h5>
+                <p><a class="unstyled-link" href="#">PageSpeed Insights</a></p>
+                <p><a class="unstyled-link" href="#">Mobile-Friendly Test</a></p>
+              </div>
+              <div>
+                <h5 class="footer-info-title">ПЕРЕЗВОНИМ В ТЕЧЕНИЕ СУТОК</h5>
+                <form class="uk-form form-transparent-full">
+                  <div class="uk-form-row">
+                    <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваше имя" requried>
+                  </div>
+                  <div class="uk-form-row">
+                    <input class="uk-form-large uk-form-width-large" type="text" placeholder="Введите Ваш номер телефона" requried>
+                  </div>
+                  <div class="uk-form-row">
+                    <input class="not-round uk-form-width-large" type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom section section-small">
+          <div class="uk-container uk-container-center">
+            <div class="uk-grid uk-grid-large" data-uk-grid-margin data-uk-grid-match>
+              <div class="uk-width-small-1-1 uk-width-medium-1-3">
+                <p class="copyright">&copy; 2013-2016 ВерсткаСайта</p>
+              </div>
+              <div class="uk-width-small-1-1 uk-width-medium-2-3">
+                <nav class="uk-navnar">
+                  <ul class="uk-navbar-nav uk-float-right uk-hidden-small">
+                    <li class="uk-active"><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">РАБОТЫ</a></li>
+                    <li><a href="#">УСЛУГИ</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">ПОЛЕЗНОЕ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end-->
+      <!-- Scripts-->
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/uikit/js/uikit.min.js"></script>
+      <script src="bower_components/uikit/js/components/grid.min.js"></script>
+      <script src="bower_components/uikit/js/components/sticky.min.js"></script>
+      <script src="bower_components/uikit/js/components/slideset.min.js"></script>
+      <script src="js/app.js"></script>
+    </div>
+  </body>
+</html>

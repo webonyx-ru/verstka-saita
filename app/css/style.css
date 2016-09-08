@@ -45,6 +45,10 @@ a:hover {
   padding: 15px 10px;
 }
 
+.-text-letter-large {
+  letter-spacing: 2px;
+}
+
 .-text-upper {
   text-transform: uppercase;
 }
@@ -117,6 +121,8 @@ a:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  transition: all 500ms ease;
+  font-size: 14px;
 }
 
 .uk-button-primary {
@@ -219,6 +225,16 @@ a:hover {
 }
 .uk-article:last-child {
   border-bottom: 0;
+}
+
+.button-dark {
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 14px;
+}
+.button-dark:hover {
+  background-color: #fff;
+  color: #4a4a4a;
 }
 
 .unstyled-link {
@@ -373,6 +389,9 @@ a:hover {
   position: relative;
   z-index: 3;
 }
+.section.section-devided {
+  border-bottom: 1px solid #dedede;
+}
 
 .section-info-block-light {
   padding: 35px 0;
@@ -437,14 +456,14 @@ a:hover {
   }
 }
 
-.section-small {
+.section-small-text {
   color: #2eb6d1;
   font-size: 14px;
   text-transform: uppercase;
   display: block;
 }
 
-.section-small-light {
+.section-small-text-light {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -576,7 +595,7 @@ a:hover {
 
 .header-info .header-info-title {
   color: #fff;
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 30px;
@@ -589,7 +608,7 @@ a:hover {
 }
 .header-info .header-info-text {
   color: #fff;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   font-size: 16px;
   line-height: 21px;
