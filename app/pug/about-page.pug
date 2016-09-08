@@ -1,13 +1,61 @@
 extends layouts/app.pug
 
 block content
-    section(style="background-image: url('images/about-page-bg.jpg');").header-info
-        .header-info-overlay
+    section(style="background-image: url('images/about-page-bg.jpg');").header-info.section-cover
+        .section-overlay
             .uk-container.uk-container-center
                 h1.header-info-title.uk-text-center О НАС
 
-    .section
+    section.section
         .uk-container.uk-container-center
             h3.section-title.uk-text-center ЗНАКОМЬТЕСЬ
             p.devider-top-center.uk-text-center «ВерсткаСайта.ру» в текущем виде выросли из агенства по front-end разработке. Основные наши клиенты были сторонние агенства и мы выполняли работу для них.
             p.uk-text-center Стремительно набрали солидную клиентскую базу, реализовали качественные кейсы и взяли новое направление — мобильная разработка. Мы нацелены на прозрачное и долгосрочное сотрудничество с клиентами, основанное на доверии и взаимопонимании, а также мы ставим увеличение показателей бизнеса наших клиентов в приоритетные задачи своей работы.
+
+    section(style="background-image: url('images/about-section-bg.jpg');").section-cover-fixed
+        .section-overlay
+            .uk-container.uk-container-center
+                ul.uk-grid.uk-grid-large.uk-grid-width-small-1-2.uk-grid-width-medium-1-2.uk-grid-width-large-1-4(data-uk-grid-margin data-uk-grid-match)
+                    li.uk-text-center
+                        img(src="images/icon-user.svg" alt="").-margin-bottom-20
+                        p.-text-light.-text-large 6
+                        .devider-top-center.-margin-bottom-30.-margin-top-30
+                        p.-text-light ЧЕЛОВЕК В ШТАТЕ
+                    li.uk-text-center
+                        img(src="images/icon-flag.svg" alt="").-margin-bottom-20
+                        p.-text-light.-text-large 58
+                        .devider-top-center.-margin-bottom-30.-margin-top-30
+                        p.-text-light ЛЕТ — СУММАРНЫЙ ОПЫТ РАБОТЫ
+                    li.uk-text-center
+                        img(src="images/icon-heart.svg" alt="").-margin-bottom-20
+                        p.-text-light.-text-large 67
+                        .devider-top-center.-margin-bottom-30.-margin-top-30
+                        p.-text-light УСПЕШНО РЕАЛИЗОВАННЫХ ПРОЕКТА
+                    li.uk-text-center
+                        img(src="images/icon-portfolio.svg" alt="").-margin-bottom-20
+                        p.-text-light.-text-large 2013
+                        .devider-top-center.-margin-bottom-30.-margin-top-30
+                        p.-text-light ГОД ОСНОВАНИЯ
+
+
+
+
+    section.section
+        .uk-container.uk-container-center
+            h3.section-title.uk-text-center ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+            p.devider-top-center
+
+            div(data-uk-slideset="{default: 1, animation: 'scale'}")
+                ul.uk-grid.uk-slideset
+                    li.uk-text-center
+                        img(src="images/heart.svg" alt="")
+                        p С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!
+                        p.title-text АНАСТАСИЯ ЛЕБЕДЕВА
+                        small Arealidea
+                    li.uk-text-center
+                        img(src="images/heart.svg" alt="")
+                        p С «ВерсткаСайта.ру» удалось пока посотрудничать в рамках одного проекта, но надеемся и далее работать с этой командой. Ответственные, работа выполнена в короткие сроки и с минимальными правками. Спасибо!
+                        p.title-text АНАСТАСИЯ ЛЕБЕДЕВА
+                        small Arealidea
+                .uk-text-center.-margin-top-20
+                    a(href="" data-uk-slideset-item="next").uk-button.uk-button-primary.uk-button-large.-text-upper Следующий отзыв

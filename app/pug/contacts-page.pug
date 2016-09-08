@@ -1,0 +1,42 @@
+extends layouts/app.pug
+
+block content
+    section(style="background-image: url('images/contacts-page-bg.jpg');").header-info.section-cover
+        .section-overlay
+            .uk-container.uk-container-center
+                h1.header-info-title.uk-text-center КОНТАКТЫ
+
+    section.section
+        .uk-container.uk-container-center
+            .uk-grid.uk-grid-large(data-uk-grid-margin)
+                div.uk-width-small-1-1.uk-width-medium-3-4
+                    h4.page-title КОНТАКТЫ
+                    form.uk-form
+                        .uk-form-row
+                            input(type="text" placeholder="Ваше имя" required).uk-form-large.uk-form-width-large
+                        .uk-form-row
+                            input(type="email" placeholder="Ваш E-mail" required).uk-form-large.uk-form-width-large
+                        .uk-form-row
+                            input(type="text" placeholder="Ваш телефон" required).uk-form-large.uk-form-width-large
+                        .uk-form-row
+                            textarea(placeholder="Сообщение").uk-form-large.uk-form-width-large
+                        .uk-form-row
+                            input(type="submit" value="Отправить").uk-form-large
+                    p
+                        strong Мы работаем круглосуточно,
+                        br
+                        | но будет рады ответить на ваш звонок, с 10:00 до 19:00 по рабочим дням
+
+
+                div.uk-width-small-1-1.uk-width-medium-1-4
+                    h4.page-title КОНТАКТНАЯ ИНФОРМАЦИЯ
+                    .-color-medium
+                        p Москва
+                            br
+                            | Варшавское шоссе, 28А
+                        p Телефон:
+                            br
+                            a(href="tel:+7 916 0063233 ").unstyled-link +7 916 0063233
+                        p Email:
+                            br
+                            a(href="mailto:welcome@pixel-monsters.ru ").unstyled-link welcome@pixel-monsters.ru

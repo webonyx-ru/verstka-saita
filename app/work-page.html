@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheets-->
     <link href="bower_components/uikit/css/uikit.min.css" rel="stylesheet">
+    <link href="bower_components/uikit/css/components/sticky.min.css" rel="stylesheet">
+    <link href="bower_components/uikit/css/components/slider.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header-->
-    <header class="header">
+    <header class="header" data-uk-sticky>
       <div class="uk-container uk-container-center">
         <div class="uk-grid">
           <div class="header-mobile-info uk-width-small-1-1 uk-width-medium-2-3 uk-hidden-large">
@@ -33,7 +35,7 @@
                 </li>
                 <li><a href="about-page.html">О НАС</a></li>
                 <li><a href="#">ПОЛЕЗНОЕ</a></li>
-                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
               </ul>
             </nav>
           </div>
@@ -55,7 +57,7 @@
           </li>
           <li><a href="about-page.html">О НАС</a></li>
           <li><a href="#">ПОЛЕЗНОЕ</a></li>
-          <li><a href="#">КОНТАКТЫ</a></li>
+          <li><a href="contacts-page.html">КОНТАКТЫ</a></li>
         </ul>
       </div>
     </div>
@@ -76,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
+    <section class="section">
       <div class="uk-container uk-container-center">
         <ul class="uk-subnav" id="types-switcher">
           <li class="uk-active" data-uk-filter=""><a href="">ВСЕ</a></li>
@@ -207,7 +209,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Content end-->
     <!-- Footer-->
     <footer class="footer">
@@ -272,5 +274,8 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/uikit/js/uikit.min.js"></script>
     <script src="bower_components/uikit/js/components/grid.min.js"></script>
+    <script src="bower_components/uikit/js/components/sticky.min.js"></script>
+    <script src="bower_components/uikit/js/components/slideset.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
