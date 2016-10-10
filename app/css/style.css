@@ -365,23 +365,38 @@ a:hover {
   background-color: rgba(246, 246, 246, 0.49);
   font-size: 14px;
 }
-.form-transparent input[type=text]:focus,
+.form-transparent input[type=text]:focus, .form-transparent input[type=text]:hover,
 .form-transparent input[type=password]:focus,
+.form-transparent input[type=password]:hover,
 .form-transparent input[type=email]:focus,
+.form-transparent input[type=email]:hover,
 .form-transparent input[type=url]:focus,
+.form-transparent input[type=url]:hover,
 .form-transparent input[type=search]:focus,
+.form-transparent input[type=search]:hover,
 .form-transparent input[type=tel]:focus,
+.form-transparent input[type=tel]:hover,
 .form-transparent input[type=number]:focus,
+.form-transparent input[type=number]:hover,
 .form-transparent input[type=datetime]:focus,
+.form-transparent input[type=datetime]:hover,
 .form-transparent input[type=datetime-local]:focus,
+.form-transparent input[type=datetime-local]:hover,
 .form-transparent input[type=date]:focus,
+.form-transparent input[type=date]:hover,
 .form-transparent input[type=month]:focus,
+.form-transparent input[type=month]:hover,
 .form-transparent input[type=time]:focus,
+.form-transparent input[type=time]:hover,
 .form-transparent input[type=week]:focus,
+.form-transparent input[type=week]:hover,
 .form-transparent input[type=color]:focus,
+.form-transparent input[type=color]:hover,
 .form-transparent select:focus,
-.form-transparent textarea:focus {
-  background: rgba(246, 246, 246, 0.59);
+.form-transparent select:hover,
+.form-transparent textarea:focus,
+.form-transparent textarea:hover {
+  background-color: rgba(246, 246, 246, 0.79);
 }
 
 .section {
@@ -760,6 +775,10 @@ a:hover {
 .types-switcher .uk-panel-teaser img {
   transition: transform 0.3s ease-in-out;
 }
+.types-switcher .uk-panel-teaser .uk-overlay > figcaption > div {
+  display: block;
+  width: 100%;
+}
 .types-switcher .uk-panel-teaser .uk-overlay a {
   color: white;
   font-size: 13px;
@@ -777,5 +796,9 @@ a:hover {
   background-color: #2897bd;
 }
 .types-switcher .uk-panel-teaser .uk-overlay:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
