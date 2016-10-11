@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     pug = require('gulp-pug'),
     sftp = require('gulp-sftp'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    plumber = require('gulp-plumber');
 
 /* SOURCES --------------------------------------------------------------------
 ---------------------------------------------------------------------------- */
@@ -38,6 +39,7 @@ var sources = {
 /* PUG ---------------------------------------------------------------------- */
 gulp.task('pug', function () {
   gulp.src(sources.pug.src)
+      .pipe(plumber())
       .pipe(pug({
         pretty: true
       }))
@@ -48,6 +50,7 @@ gulp.task('pug', function () {
 /* COMPASS ------------------------------------------------------------------ */
 gulp.task('compass', function () {
   gulp.src(sources.sass.watch)
+      .pipe(plumber())
       .pipe(compass({
           sass: sources.sass.dist,
           css: sources.css.dist,

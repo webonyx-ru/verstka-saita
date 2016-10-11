@@ -3,5 +3,6 @@ node_modules
 *.log
 app/bower_components
 app/sass-cache
+app/*.html
 dist
 .sass-cache
