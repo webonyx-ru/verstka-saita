@@ -8,8 +8,8 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     pug = require('gulp-pug'),
     sftp = require('gulp-sftp'),
-    connect = require('gulp-connect'),
-    plumber = require('gulp-plumber');
+    plumber = require('gulp-plumber'),
+    browserSync = require('browser-sync').create();
 
 /* SOURCES --------------------------------------------------------------------
 ---------------------------------------------------------------------------- */
@@ -33,31 +33,43 @@ var sources = {
     bower: {src: 'app/bower_components'}
 };
 
+/* Error Handler ---------------------------------------------------------------
+ ---------------------------------------------------------------------------- */
+
+var onError = function(err) {
+    console.log(err);
+    this.emit('end');
+};
+
 /* DEVELOPMENT GULP TASKS ------------------------------------------------------
  ---------------------------------------------------------------------------- */
 
 /* PUG ---------------------------------------------------------------------- */
 gulp.task('pug', function () {
   gulp.src(sources.pug.src)
-      .pipe(plumber())
+      .pipe(plumber({
+          errorHandler: onError
+      }))
       .pipe(pug({
         pretty: true
       }))
       .pipe(gulp.dest(sources.pug.dist))
-      .pipe(connect.reload());
+      .pipe(browserSync.reload({stream: true}));
 });
 
 /* COMPASS ------------------------------------------------------------------ */
 gulp.task('compass', function () {
   gulp.src(sources.sass.watch)
-      .pipe(plumber())
+      .pipe(plumber({
+          errorHandler: onError
+      }))
       .pipe(compass({
           sass: sources.sass.dist,
           css: sources.css.dist,
           js: sources.js.dist
       }))
       .pipe(gulp.dest(sources.css.dist))
-      .pipe(connect.reload());
+      .pipe(browserSync.reload({stream: true}));
 });
 
 /* BOWER --------------------------------------------------------------------- */
@@ -69,12 +81,12 @@ gulp.task('bower', function () {
         .pipe(gulp.dest('app'));
 });
 
-/* CONNECT ------------------------------------------------------------------- */
-gulp.task('connect', function () {
-    connect.server({
-        root: 'app',
-        port: 3000,
-        livereload: true
+/* BROWSER SYNC--------------------------------------------------------------- */
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./app"
+        }
     });
 });
 
@@ -117,4 +129,4 @@ gulp.task('watch', function () {
     gulp.watch(sources.pug.watch, ["pug"]);
 });
 
-gulp.task('default', ['connect', 'pug', 'compass', 'watch']);
+gulp.task('default', ['browser-sync', 'pug', 'compass', 'watch']);

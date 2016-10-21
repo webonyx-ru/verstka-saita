@@ -113,6 +113,11 @@ a:hover {
   color: #828282;
 }
 
+.-img-mw300 {
+  max-width: 300px;
+  width: 100%;
+}
+
 .uk-container {
   max-width: 980px;
 }
@@ -245,6 +250,53 @@ a:hover {
 .unstyled-link:hover {
   color: #2897bd;
   text-decoration: none;
+}
+
+.list-inline, .list-inline-left-icon, .list-inline-right-icon {
+  overflow: hidden;
+  margin-top: 30px;
+  min-height: 150px;
+}
+.list-inline-circle, .list-inline-left-icon > div:last-child, .list-inline-right-icon > div:first-child {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background-color: #4a4a4a;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.list-inline-circle > i, .list-inline-left-icon > div:last-child > i, .list-inline-right-icon > div:first-child > i {
+  line-height: 50px;
+}
+.list-inline-circle > i.uk-icon-mobile-phone, .list-inline-left-icon > div:last-child > i.uk-icon-mobile-phone, .list-inline-right-icon > div:first-child > i.uk-icon-mobile-phone {
+  font-size: 26px;
+}
+.list-inline-circle:hover, .list-inline-left-icon > div:hover:last-child, .list-inline-right-icon > div:hover:first-child {
+  background: #2897bd;
+}
+.list-inline > div, .list-inline-left-icon > div, .list-inline-right-icon > div {
+  float: left;
+}
+.list-inline-left-icon > div {
+  width: calc(100% - 70px);
+}
+.list-inline-left-icon > div:last-child {
+  width: 50px;
+  float: right;
+}
+.list-inline-right-icon > div {
+  width: calc(100% - 70px);
+  float: right;
+}
+.list-inline-right-icon > div:first-child {
+  width: 50px;
+  float: left;
 }
 
 .circle {
@@ -406,6 +458,9 @@ a:hover {
 }
 .section.section-devided {
   border-bottom: 1px solid #dedede;
+}
+.section.has-bg {
+  background-size: cover;
 }
 
 .section-info-block-light {
@@ -726,11 +781,14 @@ a:hover {
   content: ">";
 }
 
-.page-title {
+.page-title, .page-title-smaller {
   color: #4a4a4a;
   font-size: 18px;
   text-align: left;
   font-weight: 600;
+}
+.page-title-smaller {
+  font-size: 14px;
 }
 
 #types-switcher.uk-subnav li a {

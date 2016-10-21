@@ -84,6 +84,10 @@ a
 .-color-medium
   color: #828282
 
+.-img-mw300
+  max-width: 300px
+  width: 100%
+
 .uk-container
   max-width: 980px
 
@@ -209,6 +213,59 @@ a
     color: #2897bd
     text-decoration: none
 
+
+.list-inline
+  overflow: hidden
+  margin-top: 30px
+  min-height: 150px
+
+  &-circle
+    height: 50px
+    width: 50px
+    text-align: center
+    background-color: #4a4a4a
+    color: #fff
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    -webkit-transition: all .3s ease-in-out
+    -moz-transition: all .3s ease-in-out
+    -o-transition: all .3s ease-in-out
+    transition: all .3s ease-in-out
+
+    > i
+      line-height: 50px
+
+      &.uk-icon-mobile-phone
+        font-size: 26px
+
+    &:hover
+      background: #2897bd
+
+  > div
+    float: left
+
+  &-left-icon
+    @extend .list-inline
+
+    > div
+      width: calc(100% - 70px)
+      &:last-child
+        width: 50px
+        float: right
+        @extend .list-inline-circle
+
+  &-right-icon
+    @extend .list-inline
+
+    > div
+      width: calc(100% - 70px)
+      float: right
+      &:first-child
+        width: 50px
+        float: left
+        @extend .list-inline-circle
+
 .circle
   display: inline-block
   width: 80px
@@ -321,6 +378,9 @@ a
 
   &.section-devided
     border-bottom: 1px solid #dedede
+
+  &.has-bg
+    background-size: cover
 
 .section-info-block-light
   padding: 35px 0
@@ -617,6 +677,10 @@ a
   font-size: 18px
   text-align: left
   font-weight: 600
+
+  &-smaller
+    @extend  .page-title
+    font-size: 14px
 
 #types-switcher
   &.uk-subnav
