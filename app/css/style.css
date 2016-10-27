@@ -122,22 +122,32 @@ a:hover {
   max-width: 980px;
 }
 
-.uk-button {
+.uk-button, .uk-button:visited {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  transition: all 500ms ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   font-size: 14px;
+  background-color: #4a4a4a;
+  color: #fff;
+}
+.uk-button:hover, .uk-button:focus, .uk-button:active {
+  background: #fff;
+  color: #4a4a4a;
 }
 
-.uk-button-primary {
+.uk-button-primary, .uk-button-primary:visited {
   background-color: #2eb6d1;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-.uk-button-primary:hover {
+.uk-button-primary:hover, .uk-button-primary:focus, .uk-button-primary:active {
   background-color: #2897bd;
+  color: #fff;
 }
 
 .uk-form .uk-form-width-large {
@@ -299,21 +309,34 @@ a:hover {
   float: left;
 }
 
-.circle {
+.circle, .circle__regular {
   display: inline-block;
   width: 80px;
   height: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   line-height: 80px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.circle img {
+.circle__regular {
+  color: #fff;
+  font-size: 38px;
+}
+.circle__regular:hover {
+  background: #2eb6d1;
+}
+.circle img, .circle__regular img {
   max-width: 40%;
 }
-.circle:hover {
+.circle:hover, .circle__regular:hover {
   background: #2eb6d1;
 }
 
-.circle-dark {
+.circle-dark, .circle__regular {
   background: #4a4a4a;
 }
 
@@ -526,18 +549,14 @@ a:hover {
   }
 }
 
-.section-small-text {
+.section-small-text, .section-small-text-light {
   color: #2eb6d1;
   font-size: 14px;
   text-transform: uppercase;
   display: block;
 }
-
 .section-small-text-light {
   color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  display: block;
 }
 
 .section-title {
@@ -549,15 +568,8 @@ a:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .section-title-light {
-  margin: 0;
   color: #fff;
-  font-size: 25px;
-  line-height: 36px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 .section-title-small {
@@ -565,11 +577,8 @@ a:hover {
   font-size: 19px;
   font-weight: 400;
 }
-
 .section-title-small-light {
   color: #fff;
-  font-size: 19px;
-  font-weight: 400;
 }
 
 .section-text {
@@ -580,14 +589,8 @@ a:hover {
   letter-spacing: 0;
   text-indent: 0;
 }
-
 .section-text-light {
   color: #fff;
-  line-height: 21px;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0;
-  text-indent: 0;
 }
 
 .section-small-info {

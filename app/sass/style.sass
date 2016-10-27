@@ -95,8 +95,22 @@ a
   -webkit-border-radius: 3px
   -moz-border-radius: 3px
   border-radius: 3px
-  transition: all 500ms ease
+  -webkit-transition: all .3s ease-in-out
+  -moz-transition: all .3s ease-in-out
+  -o-transition: all .3s ease-in-out
+  transition: all .3s ease-in-out
   font-size: 14px
+  background-color: rgb(74, 74, 74)
+  color: #fff
+
+  &:hover,
+  &:focus,
+  &:active
+    background: #fff
+    color: #4a4a4a
+
+  &:visited
+    @extend .uk-button
 
 .uk-button-primary
   background-color: #2eb6d1
@@ -104,8 +118,14 @@ a
   -webkit-transition: all 500ms ease
   transition: all 500ms ease
 
-  &:hover
+  &:hover,
+  &:focus,
+  &:active
     background-color: #2897bd
+    color: #fff
+
+  &:visited
+    @extend .uk-button-primary
 
 .uk-form
 
@@ -270,8 +290,23 @@ a
   display: inline-block
   width: 80px
   height: 80px
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
   border-radius: 50%
   line-height: 80px
+  -webkit-transition: all .3s ease-in-out
+  -moz-transition: all .3s ease-in-out
+  -o-transition: all .3s ease-in-out 
+  transition: all .3s ease-in-out 
+
+  &__regular
+    @extend .circle
+    @extend .circle-dark
+    color: #fff
+    font-size: 38px
+
+    &:hover
+      background: #2eb6d1
 
   img
     max-width: 40%
@@ -435,11 +470,9 @@ a
   text-transform: uppercase
   display: block
 
-.section-small-text-light
-  color: #fff
-  font-size: 14px
-  text-transform: uppercase
-  display: block
+  &-light
+    @extend .section-small-text
+    color: #fff
 
 .section-title
   margin: 0
@@ -450,24 +483,18 @@ a
   letter-spacing: 1px
   text-transform: uppercase
 
-.section-title-light
-  margin: 0
-  color: #fff
-  font-size: 25px
-  line-height: 36px
-  font-weight: 600
-  letter-spacing: 1px
-  text-transform: uppercase
+  &-light
+    @extend .section-title-light
+    color: #fff
 
 .section-title-small
   color: #4a4a4a
   font-size: 19px
   font-weight: 400
 
-.section-title-small-light
-  color: #fff
-  font-size: 19px
-  font-weight: 400
+  &-light
+    @extend .section-title-small-light
+    color: #fff
 
 .section-text
   color: #4a4a4a
@@ -477,13 +504,9 @@ a
   letter-spacing: 0
   text-indent: 0
 
-.section-text-light
-  color: #fff
-  line-height: 21px
-  font-size: 16px
-  font-weight: 300
-  letter-spacing: 0
-  text-indent: 0
+  &-light
+    @extend .section-text-light
+    color: #fff
 
 .section-small-info
   margin: 0 auto
