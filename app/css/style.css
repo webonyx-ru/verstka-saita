@@ -94,7 +94,7 @@ a:hover {
 }
 
 .-text-light {
-  color: #fff;
+  color: #fff !important;
 }
 
 .-text-large {
@@ -120,6 +120,7 @@ a:hover {
 
 .uk-container {
   max-width: 980px;
+  min-width: 320px;
 }
 
 .uk-button, .uk-button:visited {
@@ -262,6 +263,11 @@ a:hover {
   text-decoration: none;
 }
 
+.uk-list.auto-height-child > li {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
 .list-inline, .list-inline-left-icon, .list-inline-right-icon {
   overflow: hidden;
   margin-top: 30px;
@@ -376,6 +382,15 @@ a:hover {
   background-color: #2eb6d1;
 }
 
+.devider-bottom-center-light::after {
+  display: block;
+  content: "";
+  width: 10%;
+  height: 2px;
+  margin: 15px auto 20px;
+  background-color: #fff;
+}
+
 .form-transparent-full input[type=text],
 .form-transparent-full input[type=password],
 .form-transparent-full input[type=email],
@@ -474,7 +489,25 @@ a:hover {
   background-color: rgba(246, 246, 246, 0.79);
 }
 
+.dark-bg {
+  background: #4a4a4a;
+}
+
+.grey-bg {
+  background: #D8D2D2;
+}
+
+.not-boxed {
+  padding: 0 !important;
+}
+@media screen and (max-width: 767px) {
+  .not-boxed {
+    padding: 0 0 40px 0 !important;
+  }
+}
+
 .section {
+  min-width: 320px;
   padding: 60px 0;
   position: relative;
   z-index: 3;
@@ -484,6 +517,30 @@ a:hover {
 }
 .section.has-bg {
   background-size: cover;
+}
+.section__info {
+  padding: 0;
+}
+.section__info_box {
+  padding: 20px;
+  max-width: 460px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .section__info_box {
+    max-width: 100%;
+    padding: 20px 15px;
+  }
+}
+
+[class^="section__info_img"] {
+  background-size: cover;
+}
+
+[class*="--html-verstka"] {
+  background-image: url("../images/html-verstka-info-img.jpg");
 }
 
 .section-info-block-light {
@@ -496,6 +553,14 @@ a:hover {
 .section-info-block-dark {
   background-color: #292828;
   padding: 35px 0;
+}
+
+.section-info-block-blue {
+  background-color: #2EB6D1;
+  padding: 35px 0;
+  border-style: solid solid solid none;
+  border-width: 1px 1px 1px 3px;
+  border-color: #dedede #dedede #dedede #2eb6d1;
 }
 
 .section-cover {
@@ -559,7 +624,7 @@ a:hover {
   color: #fff;
 }
 
-.section-title {
+.section-title, .section-title-light {
   margin: 0;
   color: #4a4a4a;
   font-size: 25px;
@@ -576,6 +641,7 @@ a:hover {
   color: #4a4a4a;
   font-size: 19px;
   font-weight: 400;
+  margin: 0;
 }
 .section-title-small-light {
   color: #fff;
@@ -607,6 +673,7 @@ a:hover {
 }
 
 .header {
+  min-width: 320px;
   padding: 25px 0;
   background: #fff;
 }
@@ -666,6 +733,9 @@ a:hover {
   padding: 0;
 }
 
+.header-info {
+  min-width: 320px;
+}
 .header-info .header-info-title {
   color: #fff;
   width: 90%;
